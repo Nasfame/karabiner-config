@@ -102,56 +102,6 @@
                             }
                         ],
                         "type": "basic"
-                    },
-                    {
-                        "description": "fn+f9-> PgUp",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f9",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_up"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ],
-                        "type": "basic"
-                    },
-                    {
-                        "description": "fn+f8-> PgDown",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f8",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_down"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ],
-                        "type": "basic"
                     }
                 ]
             },
@@ -224,7 +174,7 @@
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": [],
-                    "treat_as_built_in_keyboard": true
+                    "treat_as_built_in_keyboard": false
                 }
             ],
             "fn_function_keys": [

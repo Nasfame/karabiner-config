@@ -1,0 +1,55 @@
+{
+  "title": "PG Up & Down",
+  "rules": [
+    {
+      "description": "fn+f9-> PgUp",
+      "type": "basic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f9",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn+f8-> PgDown",
+      "type": "basic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f8",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_down"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

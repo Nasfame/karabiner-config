@@ -1,0 +1,63 @@
+{
+  "title": "App/Tab Switch",
+  "rules": [
+    {
+      "description": "Add Cmd+Tab -> fn+Tab (App switch).",
+      "type": "basic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "repeat": true,
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Add fn+Tab <- Cmd+Tab (Tab switch).",
+      "type": "basic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "repeat": true,
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
